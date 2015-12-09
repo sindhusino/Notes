@@ -14,5 +14,9 @@ To change port of tomcat server
 
     $sudo vi /var/lib/tomcat7/conf/server.xml
 
-<Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+2.  Now restart Tomcat with this command:
+
+    sudo service tomcat7 restart
+
 
