@@ -1,0 +1,18 @@
+Steps to install tomcat on ubuntu:
+
+1. The first thing you will want to do is update your apt-get package lists:
+
+    $sudo apt-get update
+
+2. Now you are ready to install Tomcat. Run the following command to start the installation:
+
+    $sudo apt-get install tomcat7
+    
+To change port of tomcat server
+
+1. Edit server.xml and change port="8080" to "8082"
+
+    $sudo vi /var/lib/tomcat7/conf/server.xml
+
+<Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+
